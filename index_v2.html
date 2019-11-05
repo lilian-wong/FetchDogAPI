@@ -1,0 +1,39 @@
+<!--Assignment 3. This app loads a single random image for a specific breed, based on a user input-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog API - By breed</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav>
+    <ol class="searchType">
+        <li> <a href="./index.html">Random</a></li>
+        <li> <a href="./index_v2.html">By breed</a></li>
+    </ol>
+  </nav>
+    <div class="container">
+        <h1>Get Dog Images by breed</h1>
+        <section class="msg hidden">
+          <p class="msg"></p>
+        </section>
+        <form id="getDogPics">
+          <label for="breed">Find a breed</label>
+          <input type="text" id="breedPic" placeholder="For Example: akita" required>
+          <input type="reset" value="Reset">
+          <input type="submit" value="Get dog image(s)">
+        </form>
+        <section class="results hidden">
+          <h2>Look at this dog!</h2>
+          <img class="results-img" alt="placeholder">
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index_v2.js"></script>
+</body>
+</html>
