@@ -13,7 +13,6 @@ function getDogImageByBreed() {
   }
 
 function displayResults(responseJson){
-    console.log(responseJson);
     if (isFound(responseJson.status)===true){
       $('.results-img').replaceWith(
         `<img src="${responseJson.message}" class="results-img">`
@@ -40,6 +39,7 @@ function watchForm() {
   $('form').submit(event => {
     event.preventDefault();
     updateBreed($('#breedPic').val());
+    $('.results').addClass('hidden');
     getDogImageByBreed();
     
   });
